@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="initial project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/AnswerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/AnswerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/AnswerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/GameController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/GameService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/GameServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/GenericDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/java/com.newEducation.br/dao/GenericDAOTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/java/com.newEducation.br/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MappingJPA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/PlayerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/PlayerSchoolGradeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/PlayerSchoolGradeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/PlayerSchoolGradeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/PlayerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/PlayerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/QuestionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/QuestionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/QuestionServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/SchoolService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/SchoolServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/TypeAnswer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/color.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/AppTests.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/HelloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Answer.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Answer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewEducation.iml" afterPath="$PROJECT_DIR$/NewEducation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Player.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/PlayerSchoolGrade.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/PlayerSchoolGrade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Question.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Question.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/School.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/School.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="4, 5, 6 - DAO's, Hibernate+JPA, Services">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewEducation.iws" />
@@ -120,7 +72,7 @@
       <file leaf-file-name="GameServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/GameServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1008">
+            <state line="37" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -129,7 +81,7 @@
       <file leaf-file-name="AnswerServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/AnswerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="27" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1026">
+            <state line="31" column="27" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -138,7 +90,7 @@
       <file leaf-file-name="GenericDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/GenericDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="23" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="666">
+            <state line="17" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="522">
               <folding />
             </state>
           </provider>
@@ -183,7 +135,7 @@
       <file leaf-file-name="QuestionService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="468">
+            <state line="13" column="48" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -201,7 +153,7 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="5" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.57746476" vertical-offset="572" max-vertical-offset="1188">
+            <state line="50" column="5" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.57746476" vertical-offset="572" max-vertical-offset="1188">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1096,7 +1048,7 @@
       <workItem from="1406825810633" duration="6862000" />
       <workItem from="1406843668661" duration="1972000" />
       <workItem from="1406856542202" duration="58000" />
-      <workItem from="1406891699673" duration="647000" />
+      <workItem from="1406891699673" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1403976534361</created>
@@ -1106,11 +1058,15 @@
       <created>1403976542138</created>
       <updated>1403976542138</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4, 5, 6 - DAO's, Hibernate+JPA, Services">
+      <created>1406892567192</created>
+      <updated>1406892567192</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73292000" />
+    <option name="totallyTimeSpent" value="73620000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1138,34 +1094,34 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3425926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17906977" sideWeight="0.15123457" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1807419" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1807419" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31176007" sideWeight="0.5833333" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17916338" sideWeight="0.37011495" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31944445" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17916338" sideWeight="0.6275862" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40895063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31176007" sideWeight="0.5833333" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39660493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17916338" sideWeight="0.37011495" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991317" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36882716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39660493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969134" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1185,7 +1141,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="initial project" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial project" />
+    <MESSAGE value="4, 5, 6 - DAO's, Hibernate+JPA, Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="4, 5, 6 - DAO's, Hibernate+JPA, Services" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1434,14 +1391,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="41" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+        <state line="17" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="522">
           <folding />
         </state>
       </provider>
@@ -1455,14 +1412,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/GameServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1008">
+        <state line="37" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/AnswerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1026">
+        <state line="31" column="27" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
@@ -1483,7 +1440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="13" column="48" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
@@ -1504,7 +1461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.57746476" vertical-offset="572" max-vertical-offset="1188">
+        <state line="50" column="5" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.57746476" vertical-offset="572" max-vertical-offset="1188">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

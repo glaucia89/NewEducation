@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="PostgreSQL - newEducationBD@localhost" uuid="04612e47-f233-4e7f-b0f9-ea23b8a425fb">
+    <database-info product="PostgreSQL" version="9.1.13" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <schema name="public" catalog="newEducationBD"/>
+    <table name="ne_answer" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfYW5zd2VyX2lkX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <column name="type_answer" sqlType="varchar" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="response" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="picture" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="audio" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="is_correct" sqlType="bool" length="1" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="fk_question_answer" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfYW5zd2VyX2ZrX3F1ZXN0aW9uX2Fuc3dlcl9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <primary-key name="ne_answer_pkey" columns="id"/>
+      <foreign-key name="fk_question_answer" columns="fk_question_answer" ref-table="ne_question" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="ne_answer_fk_question_answer_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_answer_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_game" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfZ2FtZV9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="date_game" sqlType="date" length="13" precision="0" nullable="true" jdbcType="91"/>
+      <column name="is_correct_answer" sqlType="bool" length="1" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="fk_player_school" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfZ2FtZV9ma19wbGF5ZXJfc2Nob29sX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <column name="fk_question_game" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfZ2FtZV9ma19xdWVzdGlvbl9nYW1lX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <primary-key name="ne_game_pkey" columns="id"/>
+      <foreign-key name="fk_player_school" columns="fk_player_school" ref-table="ne_player_school" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_question_game" columns="fk_question_game" ref-table="ne_question" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="ne_game_fk_player_school_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_game_fk_question_game_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_game_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_player" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcGxheWVyX2lkX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <column name="fk_user" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcGxheWVyX2ZrX3VzZXJfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
+      <column name="gender" sqlType="varchar" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="date_of_birth" sqlType="date" length="13" precision="0" nullable="true" jdbcType="91"/>
+      <primary-key name="ne_player_pkey" columns="id"/>
+      <foreign-key name="fk_user" columns="fk_user" ref-table="ne_user" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_player" table="ne_player_school" schema="public" catalog="newEducationBD" columns="fk_player"/>
+      <exported-key name="fk_school" table="ne_player_school" schema="public" catalog="newEducationBD" columns="fk_school"/>
+    </table>
+    <table name="ne_player_fk_user_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_player_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_player_school" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcGxheWVyX3NjaG9vbF9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="year_classe" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="classe" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="fk_player" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcGxheWVyX3NjaG9vbF9ma19wbGF5ZXJfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
+      <column name="fk_school" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcGxheWVyX3NjaG9vbF9ma19zY2hvb2xfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
+      <primary-key name="ne_player_school_pkey" columns="id"/>
+      <foreign-key name="fk_player" columns="fk_player" ref-table="ne_player" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_school" columns="fk_school" ref-table="ne_player" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_player_school" table="ne_game" schema="public" catalog="newEducationBD" columns="fk_player_school"/>
+    </table>
+    <table name="ne_player_school_fk_player_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_player_school_fk_school_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_player_school_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_question" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfcXVlc3Rpb25faWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
+      <column name="type_question" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="hability" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="asking" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="level" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="ne_question_pkey" columns="id"/>
+      <exported-key name="fk_question_answer" table="ne_answer" schema="public" catalog="newEducationBD" columns="fk_question_answer"/>
+      <exported-key name="fk_question_game" table="ne_game" schema="public" catalog="newEducationBD" columns="fk_question_game"/>
+    </table>
+    <table name="ne_question_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_school" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfc2Nob29sX2lkX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <column name="title" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="city" sqlType="varchar" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="state" sqlType="varchar" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="ne_school_pkey" columns="id"/>
+    </table>
+    <table name="ne_school_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="ne_user" schema="public" catalog="newEducationBD" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnbmVfdXNlcl9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="type_user" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="name_user" sqlType="varchar" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="login_user" sqlType="varchar" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="password_user" sqlType="varchar" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="ne_user_pkey" columns="id"/>
+      <exported-key name="fk_user" table="ne_player" schema="public" catalog="newEducationBD" columns="fk_user"/>
+    </table>
+    <table name="ne_user_id_seq" schema="public" catalog="newEducationBD" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+  </data-source>
+</component>
