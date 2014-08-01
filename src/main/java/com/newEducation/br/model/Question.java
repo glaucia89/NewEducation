@@ -1,14 +1,30 @@
 package com.newEducation.br.model;
 
-/**
- * Created by glaucia on 28/06/14.
- */
-public class Question {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
+/**
+ * Created by glaucia on 03/07/14.
+ */
+@Entity
+public class Question implements Serializable {
+
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "type_question")
     private TypeQuestion typeQuestion;
+
+    @Column(name = "hability")
     private Hability hability;
+
+    @Column(name = "asking")
     private String asking;
+
+    @Column(name = "level")
     private Integer level;
 
     public Question() {

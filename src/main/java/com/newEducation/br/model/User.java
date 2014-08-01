@@ -1,14 +1,30 @@
 package com.newEducation.br.model;
 
-/**
- * Created by glaucia on 28/06/14.
- */
-public class User {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
+/**
+ * Created by glaucia on 03/07/14.
+ */
+@Entity
+public class User implements Serializable {
+
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "name_user")
     private String nameUser;
+
+    @Column(name = "type_user")
     private TypeUser typeUser;
+
+    @Column(name = "login_user")
     private String loginUser;
+
+    @Column(name = "password_user")
     private String passwordUser;
 
     public User() {

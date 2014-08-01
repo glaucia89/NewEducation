@@ -1,16 +1,31 @@
 package com.newEducation.br.model;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by glaucia on 28/06/14.
+ * Created by glaucia on 03/07/14.
  */
-public class Game {
+@Entity
+public class Game implements Serializable {
 
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "date_game")
     private Date date;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_player_school")
     private PlayerSchoolGrade playerSchoolGrade;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_question_game")
     private Question questionGame;
+
+    @Column(name = "is_correct_answer")
     private Boolean isCorrectAnswer;
 
     public Game() {
@@ -56,3 +71,4 @@ public class Game {
         this.isCorrectAnswer = isCorrectAnswer;
     }
 }
+

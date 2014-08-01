@@ -1,14 +1,31 @@
 package com.newEducation.br.model;
 
-/**
- * Created by glaucia on 28/06/14.
- */
-public class PlayerSchoolGrade {
+import javax.persistence.*;
+import java.io.Serializable;
 
+/**
+ * Created by glaucia on 03/07/14.
+ */
+@Entity
+public class PlayerSchoolGrade implements Serializable {
+
+
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "year_classe")
     private Integer yearClasse;
+
+    @Column(name = "classe")
     private Integer classe;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_player")
     private Player player;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_school")
     private School school;
 
     public PlayerSchoolGrade() {

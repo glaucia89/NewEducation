@@ -1,16 +1,35 @@
 package com.newEducation.br.model;
 
-/**
- * Created by glaucia on 28/06/14.
- */
-public class Answer {
+import javax.persistence.*;
+import java.io.Serializable;
 
+/**
+ * Created by glaucia on 03/07/14.
+ */
+@Entity
+public class Answer implements Serializable {
+
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "type_answer")
     private String type;
+
+    @Column(name = "response")
     private String response;
+
+    @Column(name = "picture")
     private String picture;
+
+    @Column(name = "audio")
     private String audio;
+
+    @Column(name = "is_correct")
     private Boolean isCorrect;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_question")
     private Question question;
 
     public Answer() {

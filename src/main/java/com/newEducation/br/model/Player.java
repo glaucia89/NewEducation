@@ -1,15 +1,27 @@
 package com.newEducation.br.model;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by glaucia on 28/06/14.
+ * Created by glaucia on 03/07/14.
  */
-public class Player {
+@Entity
+public class Player implements Serializable {
 
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "date_of_birth")
     private Date dateOfBirth;
+
+    @Column(name = "gender")
     private Gender gender;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_user")
     private User userPlayer;
 
     public Player() {

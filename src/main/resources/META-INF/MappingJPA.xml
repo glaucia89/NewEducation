@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.newEducation.br.model.Question"/>
+    <entity class="com.newEducation.br.model.Answer"/>
+    <entity class="com.newEducation.br.model.School"/>
+    <entity class="com.newEducation.br.model.Game"/>
+    <entity class="com.newEducation.br.model.User"/>
+    <entity class="com.newEducation.br.model.Player"/>
+    <entity class="com.newEducation.br.model.PlayerSchoolGrade"/>
+
+</entity-mappings>
