@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="4, 5, 6 - DAO's, Hibernate+JPA, Services">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="4, 5, 6 - DAO's, Hibernate+JPA, Services" />
     <ignored path="NewEducation.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1048,7 +1046,7 @@
       <workItem from="1406825810633" duration="6862000" />
       <workItem from="1406843668661" duration="1972000" />
       <workItem from="1406856542202" duration="58000" />
-      <workItem from="1406891699673" duration="975000" />
+      <workItem from="1406891699673" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1403976534361</created>
@@ -1066,7 +1064,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73620000" />
+    <option name="totallyTimeSpent" value="74027000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
