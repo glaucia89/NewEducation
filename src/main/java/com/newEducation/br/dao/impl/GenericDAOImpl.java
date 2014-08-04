@@ -37,4 +37,5 @@ public class GenericDAOImpl implements GenericDAO {
         return entityManager.createQuery("FROM " + clazz.getName()).getResultList();
     }
 
+
 }

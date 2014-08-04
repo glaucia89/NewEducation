@@ -46,4 +46,5 @@ public class AnswerServiceImpl implements AnswerService {
         List<Answer> listAnswer = new LinkedList<Answer>();
         return listAnswer;
     }
+
 }
