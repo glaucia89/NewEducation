@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="" version="2.0">
-    <title>Bootstrap Template</title>
+    <title>School</title>
 
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/css/color.css"/>
@@ -26,6 +26,11 @@
 </head>
 <body>
 
+<jsp:include page="templates/header.jsp"/>
+
+<jsp:include page="templates/formAddSchool.jsp"/>
+
+<jsp:include page="templates/footer.jsp"/>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

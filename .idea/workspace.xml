@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="9 - melhorias no template">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/java/com/newEducation/br/controller/SchoolControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jsp_jstl_jstl_api_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/signup.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/teste.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pie/PIE.htc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pie/PIE.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pie/PIE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pie/PIE_uncompressed.htc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pie/PIE_uncompressed.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/vendor/bootstrap/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/vendor/bootstrap/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/color.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/color.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/font/vendor/boostrap/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/font/vendor/boostrap/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/font/vendor/boostrap/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/font/vendor/boostrap/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/vendor/bootstrap/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/vendor/bootstrap/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewEducation.iml" afterPath="$PROJECT_DIR$/NewEducation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/NewEducation_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="7fe81b0f-98cd-4adb-a234-bec5ba5fff32" name="Default" comment="6, 7 - Controller e JSP School">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addschool.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/formAddSchool.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/headerLogin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/SchoolServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/SchoolServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewEducation.iws" />
@@ -100,22 +69,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" line="25" class="com.newEducation.br.dao.impl.GenericDAOImpl" package="com.newEducation.br.dao.impl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java" line="37" class="com.newEducation.br.controller.SchoolController" package="com.newEducation.br.controller">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" line="27" class="com.newEducation.br.dao.impl.GenericDAOImpl" package="com.newEducation.br.dao.impl">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -140,10 +94,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="template.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="708" selection-end="837" vertical-scroll-proportion="-7.0" vertical-offset="171" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SchoolController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="8" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.3310811" vertical-offset="370" max-vertical-offset="666">
+            <state line="17" column="11" selection-start="644" selection-end="644" vertical-scroll-proportion="0.2857143" vertical-offset="18" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="21" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-14.37037" vertical-offset="242" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formAddSchool.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/formAddSchool.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="0" selection-start="3325" selection-end="3325" vertical-scroll-proportion="-9.111111" vertical-offset="996" max-vertical-offset="1350">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="-6.6666665" vertical-offset="54" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="headerLogin.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/headerLogin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="6" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-20.666666" vertical-offset="0" max-vertical-offset="666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addschool.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addschool.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="948" selection-end="1089" vertical-scroll-proportion="-2.0" vertical-offset="432" max-vertical-offset="846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="216">
               <folding />
             </state>
           </provider>
@@ -152,10 +169,8 @@
       <file leaf-file-name="GenericDAOImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="864">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="12" column="11" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="846">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,45 +179,35 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/context/request/async/WebAsyncManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="133" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.0" vertical-offset="1702" max-vertical-offset="7020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocationTargetException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk1.7.0_51/src.zip!/java/lang/reflect/InvocationTargetException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="1656">
               <folding>
-                <element signature="e#2547#2548#0" expanded="true" />
+                <element signature="e#0#16369#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3407#3446#0" expanded="false" />
+                <element signature="e#3564#3609#0" expanded="false" />
+                <element signature="e#4639#4800#0" expanded="false" />
+                <element signature="e#4795#4796#0" expanded="false" />
+                <element signature="e#5081#5082#0" expanded="false" />
+                <element signature="e#5120#5121#0" expanded="false" />
+                <element signature="e#6113#6114#0" expanded="false" />
+                <element signature="e#6148#6149#0" expanded="false" />
+                <element signature="e#6345#6346#0" expanded="false" />
+                <element signature="e#6387#6388#0" expanded="false" />
+                <element signature="e#10073#10119#0" expanded="false" />
+                <element signature="e#11438#11469#0" expanded="false" />
+                <element signature="e#11829#12116#0" expanded="false" />
+                <element signature="e#12111#12112#0" expanded="false" />
+                <element signature="e#12164#12284#0" expanded="false" />
+                <element signature="e#12279#12280#0" expanded="false" />
+                <element signature="e#12437#12821#0" expanded="false" />
+                <element signature="e#12816#12817#0" expanded="false" />
+                <element signature="e#14584#14621#0" expanded="false" />
+                <element signature="e#14948#15160#0" expanded="false" />
+                <element signature="e#15155#15156#0" expanded="false" />
+                <element signature="e#15208#15334#0" expanded="false" />
+                <element signature="e#15329#15330#0" expanded="false" />
+                <element signature="e#15584#15805#0" expanded="false" />
+                <element signature="e#15799#15800#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchoolService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/SchoolService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchoolServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/SchoolServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="792">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/GenericDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -225,11 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/PlayerDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/PlayerSchoolGradeDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/QuestionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/SchoolDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/AnswerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/AnswerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/AnswerDAO.java" />
@@ -257,9 +257,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/boostrap/css/color.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/schooladd.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
         <option value="$PROJECT_DIR$/test/java/com/newEducation/br/controller/SchoolControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templatetest.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
@@ -272,9 +270,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/teste.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/service/impl/SchoolServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/headerLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/FormAddSchool.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addSchool.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addschool.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java" />
       </list>
     </option>
@@ -433,6 +438,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewEducation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewEducation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1128,7 +1167,7 @@
       <workItem from="1407371358378" duration="50000" />
       <workItem from="1407371424480" duration="3796000" />
       <workItem from="1407451553588" duration="2326000" />
-      <workItem from="1407612670696" duration="18535000" />
+      <workItem from="1407612670696" duration="21412000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1403976534361</created>
@@ -1146,11 +1185,15 @@
       <created>1407115175401</created>
       <updated>1407115175401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6, 7 - Controller e JSP School">
+      <created>1407643445069</created>
+      <updated>1407643445069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128984000" />
+    <option name="totallyTimeSpent" value="131861000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1178,7 +1221,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3425926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23756906" sideWeight="0.38303342" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23756906" sideWeight="0.38428876" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1807419" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1189,12 +1232,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31944445" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23756906" sideWeight="0.6143959" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27314815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23756906" sideWeight="0.6157113" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27314815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17916338" sideWeight="0.37037036" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39660493" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23756906" sideWeight="0.3836317" order="4" side_tool="true" content_ui="tabs" />
@@ -1227,7 +1270,8 @@
     <MESSAGE value="initial project" />
     <MESSAGE value="4, 5, 6 - DAO's, Hibernate+JPA, Services" />
     <MESSAGE value="9 - melhorias no template" />
-    <option name="LAST_COMMIT_MESSAGE" value="9 - melhorias no template" />
+    <MESSAGE value="6, 7 - Controller e JSP School" />
+    <option name="LAST_COMMIT_MESSAGE" value="6, 7 - Controller e JSP School" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1239,21 +1283,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1062" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/model/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1818" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/model/TypeAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/model/TypeQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="8" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558" />
@@ -1384,13 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="307" selection-end="693" vertical-scroll-proportion="-2.4074075" vertical-offset="115" max-vertical-offset="2214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/vendor/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135792">
@@ -1413,13 +1435,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
           <folding />
@@ -1478,20 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="50" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-8.0" vertical-offset="1494" max-vertical-offset="2340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/service/SchoolService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="34" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="450">
@@ -1517,7 +1518,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="1656">
           <folding>
-            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#0#2811#0" expanded="false" />
+            <element signature="e#2778#2779#0" expanded="false" />
+            <element signature="e#2807#2808#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1525,7 +1528,35 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/context/request/async/WebAsyncManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.0" vertical-offset="1702" max-vertical-offset="7020">
-          <folding />
+          <folding>
+            <element signature="e#0#16369#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3407#3446#0" expanded="false" />
+            <element signature="e#3564#3609#0" expanded="false" />
+            <element signature="e#4639#4800#0" expanded="false" />
+            <element signature="e#4795#4796#0" expanded="false" />
+            <element signature="e#5081#5082#0" expanded="false" />
+            <element signature="e#5120#5121#0" expanded="false" />
+            <element signature="e#6113#6114#0" expanded="false" />
+            <element signature="e#6148#6149#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6387#6388#0" expanded="false" />
+            <element signature="e#10073#10119#0" expanded="false" />
+            <element signature="e#11438#11469#0" expanded="false" />
+            <element signature="e#11829#12116#0" expanded="false" />
+            <element signature="e#12111#12112#0" expanded="false" />
+            <element signature="e#12164#12284#0" expanded="false" />
+            <element signature="e#12279#12280#0" expanded="false" />
+            <element signature="e#12437#12821#0" expanded="false" />
+            <element signature="e#12816#12817#0" expanded="false" />
+            <element signature="e#14584#14621#0" expanded="false" />
+            <element signature="e#14948#15160#0" expanded="false" />
+            <element signature="e#15155#15156#0" expanded="false" />
+            <element signature="e#15208#15334#0" expanded="false" />
+            <element signature="e#15329#15330#0" expanded="false" />
+            <element signature="e#15584#15805#0" expanded="false" />
+            <element signature="e#15799#15800#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1552,16 +1583,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/dao/impl/GenericDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="864">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="12" column="11" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/headerLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="6" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-20.666666" vertical-offset="0" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="-6.6666665" vertical-offset="54" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="21" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-14.37037" vertical-offset="242" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="708" selection-end="837" vertical-scroll-proportion="-7.0" vertical-offset="171" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/templates/formAddSchool.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="3325" selection-end="3325" vertical-scroll-proportion="-9.111111" vertical-offset="996" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addschool.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="948" selection-end="1089" vertical-scroll-proportion="-2.0" vertical-offset="432" max-vertical-offset="846">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newEducation/br/controller/SchoolController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.3310811" vertical-offset="370" max-vertical-offset="666">
+        <state line="17" column="11" selection-start="644" selection-end="644" vertical-scroll-proportion="0.2857143" vertical-offset="18" max-vertical-offset="738">
           <folding />
         </state>
       </provider>
