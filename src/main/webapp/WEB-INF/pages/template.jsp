@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en"
-      xmlns="http://java.sun.com/JSP/Page">
+<%--
+  Created by IntelliJ IDEA.
+  User: glaucia
+  Date: 05/08/14
+  Time: 22:12
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="" version="2.0">
     <title>Bootstrap Template</title>
 
-    <!-- Bootstrap -->
-    <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/css/color.css"/>
     <!--<link href="/WEB-INF/pages/boostrap/css/color.css" rel="stylesheet" type="text/css" media="screen" />-->
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -60,25 +69,23 @@
             <div class="row placeholders">
                 <div class="col-xs-12 pager">
                     <div class="row">
-                        <form role="form">
+                        <form role="form" id="schoolAdd" method="post" modelAtribute="schoolmodel">
                             <div class="form-horizontal" role="form">
                                 <label for="titleforschool" class="col-sm-2 control-label">Titulo da Escola</label>
 
                                 <div class="col-sm-10" style="padding-bottom: 25px;">
-                                    <input type="text" class="form-control" id="titleforschool"
-                                           placeholder="Digite o titulo da Escola">
+                                    <input name="title" type="text" class="form-control" id="titleforschool"
+                                           placeholder="Digite o titulo da Escola" value="${school.title}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="cityforschool" class="col-sm-2 control-label">Cidade</label>
 
                                 <div class="col-sm-10" style="padding-bottom: 25px;">
-                                    <select class="form-control" id="cityforschool">
-                                        <option value="one">One</option>
-                                        <option value="two">Two</option>
-                                        <option value="three">Three</option>
-                                        <option value="four">Four</option>
-                                        <option value="five">Five</option>
+                                    <select name="city" class="form-control" id="cityforschool">
+                                        <c:forEach var="item" items="${cities}">
+                                            <option value="${item}">${item.valor}</option>
+                                        </c:forEach>
                                     </select>
                                 </div>
                             </div>
@@ -86,12 +93,10 @@
                                 <label for="stateforschool" class="col-sm-2 control-label">Estado</label>
 
                                 <div class="col-sm-10" style="padding-bottom: 25px;">
-                                    <select class="form-control" id="stateforschool">
-                                        <option value="one">One</option>
-                                        <option value="two">Two</option>
-                                        <option value="three">Three</option>
-                                        <option value="four">Four</option>
-                                        <option value="five">Five</option>
+                                    <select name="state" class="form-control" id="stateforschool">
+                                        <c:forEach var="item" items="${states}">
+                                            <option value="${item}">${item.valor}</option>
+                                        </c:forEach>
                                     </select>
                                 </div>
                             </div>
@@ -113,6 +118,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../../assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
 </body>
 </html>

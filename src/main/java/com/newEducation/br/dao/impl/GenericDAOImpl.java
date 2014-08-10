@@ -1,7 +1,7 @@
 package com.newEducation.br.dao.impl;
 
 import com.newEducation.br.dao.GenericDAO;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by glaucia on 13/07/14.
  */
-@Component
+@Repository
 public class GenericDAOImpl implements GenericDAO {
 
     @PersistenceContext(unitName = "NewEducationBD")

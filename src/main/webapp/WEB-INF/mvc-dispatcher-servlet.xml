@@ -9,17 +9,19 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <mvc:resources mapping="/assets/**" location="WEB-INF/assets/" cache-period="120"/>
+
+
     <context:component-scan base-package="com.newEducation.br"/>
 
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
     <context:annotation-config/>
 
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
-    <bean id="genericDao" class="com.newEducation.br.dao.impl.GenericDAOImpl"/>
 
 </beans>

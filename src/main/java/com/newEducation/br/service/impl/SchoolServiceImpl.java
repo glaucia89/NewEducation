@@ -3,6 +3,7 @@ package com.newEducation.br.service.impl;
 import com.newEducation.br.dao.GenericDAO;
 import com.newEducation.br.model.School;
 import com.newEducation.br.service.SchoolService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +14,8 @@ import java.util.List;
 @Service
 public class SchoolServiceImpl implements SchoolService {
 
-    private GenericDAO dao;
+    @Autowired
+    protected GenericDAO dao;
 
     @Override
     public void saveSchool(School school) {
