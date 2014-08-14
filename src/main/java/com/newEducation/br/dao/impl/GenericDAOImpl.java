@@ -4,7 +4,6 @@ import com.newEducation.br.dao.GenericDAO;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 /**
@@ -13,7 +12,7 @@ import java.util.List;
 @Repository
 public class GenericDAOImpl implements GenericDAO {
 
-    @PersistenceContext(unitName = "NewEducationBD")
+    //@PersistenceUnit
     protected EntityManager entityManager;
 
 

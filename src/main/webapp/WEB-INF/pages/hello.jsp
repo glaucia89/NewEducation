@@ -1,7 +1,9 @@
 <html>
 <body>
 <h1>${message}</h1>
-<a href="/School/add">School</a>
-<a href="template.html">Template</a>
+<a href="/school/">School list</a>
+
+<a href="/school/add">School list</a>
+
 </body>
 </html>

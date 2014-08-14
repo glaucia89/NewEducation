@@ -24,7 +24,8 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="NewEducationBD" />
+          <factory-entry name="NewEducationBD" value="04612e47-f233-4e7f-b0f9-ea23b8a425fb" />
+          <factory-entry name="emf" value="04612e47-f233-4e7f-b0f9-ea23b8a425fb" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
@@ -48,9 +49,16 @@
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.54" level="application_server_libraries" />
-    <orderEntry type="library" name="JPA 1.0-JPA 1.0" level="project" />
     <orderEntry type="library" name="Hibernate 4.2.2-4.2.2 (2)" level="project" />
     <orderEntry type="library" name="javax.servlet.jsp.jstl:jstl-api:1.2" level="project" />
+    <orderEntry type="library" name="org.springframework:spring-jpa:2.0-rc1" level="project" />
+    <orderEntry type="library" name="org.springframework:spring-orm:3.2.10.RELEASE" level="project" />
+    <orderEntry type="library" name="hibernate-entitymanager:hibernate-entitymanager:3.3.2.GA" level="project" />
+    <orderEntry type="library" name="javax.persistence:com.springsource.javax.persistence:2.0.0" level="project" />
+    <orderEntry type="library" name="org.hibernate:hibernate-core:4.2.11.Final" level="project" />
+    <orderEntry type="library" name="org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
+    <orderEntry type="library" name="javax.persistence:com.springsource.javax.persistence:2.0.01" level="project" />
+    <orderEntry type="library" name="org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.0.RELEASE" level="project" />
@@ -62,6 +70,9 @@
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />

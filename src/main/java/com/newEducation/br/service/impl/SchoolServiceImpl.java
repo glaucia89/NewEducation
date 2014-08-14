@@ -41,4 +41,10 @@ public class SchoolServiceImpl implements SchoolService {
     public List<School> findAll() {
         return dao.findAll(School.class);
     }
+
+    @Override
+    public void deleteSchoolbyId(Long id) {
+        School school = dao.getById(School.class, id);
+        dao.delete(school);
+    }
 }

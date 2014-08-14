@@ -18,6 +18,9 @@
     <mvc:default-servlet-handler/>
     <context:annotation-config/>
 
+    <!-- <bean class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="NewEducationBD" />
+    </bean> -->
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>

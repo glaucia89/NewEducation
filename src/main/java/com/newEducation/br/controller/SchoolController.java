@@ -6,40 +6,74 @@ import com.newEducation.br.model.State;
 import com.newEducation.br.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by glaucia on 31/07/14.
  */
 @Controller
+@RequestMapping(value = "/school")
 public class SchoolController {
 
     @Autowired
     private SchoolService schoolService;
 
-    @RequestMapping(value = "/School/page", method = RequestMethod.GET)
-    public String listSchool(Model model) {
-        model.addAttribute("schools", this.schoolService.findAll());
-        return "listschool";
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public ModelAndView list() {
+        ModelAndView modelAndView = new ModelAndView("/school/homeschool");
+        modelAndView.addObject("titulo", "Escolas");
+        //modelAndView.addObject("schools", this.schoolService.findAll());
+        return modelAndView;
     }
 
-    @RequestMapping(value = "/School/add", method = RequestMethod.GET)
-    public String initAddSchool(ModelMap model) {
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public ModelAndView initAddSchool() {
+        ModelAndView modelAndView = new ModelAndView("formSchool");
         School school = new School();
-        model.addAttribute("school", school);
-        model.addAttribute("cities", City.values());
-        model.addAttribute("states", State.values());
-        return "addschool";
+        modelAndView.addObject("titulo", "Adicionar Escola");
+        modelAndView.addObject("school", school);
+        modelAndView.addObject("cities", City.values());
+        modelAndView.addObject("states", State.values());
+        return modelAndView;
     }
 
-    @RequestMapping(value = "/School/add", method = RequestMethod.POST)
-    public String save(@ModelAttribute("schoolmodel") School schoolmodel, Model model) {
-        this.schoolService.saveSchool(schoolmodel);
-        model.addAttribute("message", "Escola " + schoolmodel.getTitle() + " foi salva com sucesso");
-        return "listschool";
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public ModelAndView save(@ModelAttribute("schoolmodel") School schoolmodel) {
+        ModelAndView modelAndView = new ModelAndView("homeschool");
+        modelAndView.addObject("titulo", "Escolas");
+        //this.schoolService.saveSchool(schoolmodel);
+        modelAndView.addObject("message", "Escola " + schoolmodel.getTitle() + " foi salva com sucesso");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/edit{id}", method = RequestMethod.GET)
+    public ModelAndView initEditSchool(@PathVariable Long id) {
+        //School school = this.schoolService.findSchoolById(id);
+        ModelAndView modelAndView = new ModelAndView("formSchool");
+        modelAndView.addObject("titulo", "Editar Escola");
+        //modelAndView.addObject("school", school);
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/edit{id}", method = RequestMethod.POST)
+    public ModelAndView update(@ModelAttribute School school, @PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("homeschool");
+        modelAndView.addObject("titulo", "Escolas");
+        //this.schoolService.updateSchool(school);
+        modelAndView.addObject("messagee", "Escola " + school.getTitle() + " editado com sucesso!");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/delete{id}", method = RequestMethod.GET)
+    public ModelAndView delete(@PathVariable Long id) {
+        //this.schoolService.deleteSchoolbyId(id);
+        ModelAndView modelAndView = new ModelAndView("homeschool");
+        modelAndView.addObject("titulo", "Escolas");
+        modelAndView.addObject("message", "Escola deletada com sucesso!");
+        return modelAndView;
     }
 }
