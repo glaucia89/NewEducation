@@ -1,8 +1,9 @@
 package com.newEducation.br.service.impl;
 
-import com.newEducation.br.dao.GenericDAO;
+import com.newEducation.br.dao.UserDAO;
 import com.newEducation.br.model.User;
 import com.newEducation.br.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +14,8 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private GenericDAO dao;
+    @Autowired
+    private UserDAO dao;
 
     @Override
     //TODO - incluir mensagem de erro
@@ -36,12 +38,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findUserById(Long id) {
-        return dao.getById(User.class, id);
+        return dao.getById(id);
     }
 
     @Override
     public List<User> findAll() {
-        return dao.findAll(User.class);
+        return dao.findAll();
     }
 
     @Override

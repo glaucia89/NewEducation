@@ -26,10 +26,7 @@
                         <td>${item.titulo}</td>
                         <td>${Item.city}</td>
                         <td>${item.state}</td>
-                        <td>
-                            <a href="${pageContext.request.contextPath}/School/edit${Item.id}.html">Editar</a><br>
-                            <a href="${pageContext.request.contextPath}/School  /delete${Item.id}.html">Deletar</a>
-                        </td>
+                        <td>nada</td>
                     </tr>
                 </c:forEach>
                 </tbody>

@@ -23,13 +23,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" />
-          <element id="library" level="project" name="javax.persistence:com.springsource.javax.persistence:2.0.01" />
-          <element id="library" level="project" name="org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
           <element id="library" level="project" name="org.hibernate:hibernate-core:4.2.11.Final" />
-          <element id="library" level="project" name="javax.persistence:com.springsource.javax.persistence:2.0.0" />
-          <element id="library" level="project" name="hibernate-entitymanager:hibernate-entitymanager:3.3.2.GA" />
           <element id="library" level="project" name="org.springframework:spring-orm:3.2.10.RELEASE" />
-          <element id="library" level="project" name="org.springframework:spring-jpa:2.0-rc1" />
+          <element id="library" level="project" name="org.postgresql:com.springsource.org.postgresql.jdbc4:8.3.604" />
         </element>
       </element>
     </root>

@@ -1,17 +1,19 @@
 package com.newEducation.br.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * Created by glaucia on 03/07/14.
  */
 @Entity
+@Table(name = "ne_school")
 public class School implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "ID_seq")
+    @SequenceGenerator(sequenceName = "ne_school_id_seq", name = "ID_seq", allocationSize = 1)
     @Column(name = "id", nullable = false)
     private Long id;
 

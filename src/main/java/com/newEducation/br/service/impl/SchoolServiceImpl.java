@@ -1,6 +1,6 @@
 package com.newEducation.br.service.impl;
 
-import com.newEducation.br.dao.GenericDAO;
+import com.newEducation.br.dao.SchoolDAO;
 import com.newEducation.br.model.School;
 import com.newEducation.br.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 public class SchoolServiceImpl implements SchoolService {
 
     @Autowired
-    protected GenericDAO dao;
+    protected SchoolDAO dao;
 
     @Override
     public void saveSchool(School school) {
@@ -34,17 +34,17 @@ public class SchoolServiceImpl implements SchoolService {
 
     @Override
     public School findSchoolById(Long id) {
-        return dao.getById(School.class, id);
+        return dao.getById(id);
     }
 
     @Override
     public List<School> findAll() {
-        return dao.findAll(School.class);
+        return dao.findAll();
     }
 
     @Override
     public void deleteSchoolbyId(Long id) {
-        School school = dao.getById(School.class, id);
+        School school = dao.getById(id);
         dao.delete(school);
     }
 }

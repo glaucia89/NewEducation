@@ -1,9 +1,10 @@
 package com.newEducation.br.service.impl;
 
-import com.newEducation.br.dao.GenericDAO;
+import com.newEducation.br.dao.AnswerDAO;
 import com.newEducation.br.model.Answer;
 import com.newEducation.br.model.Question;
 import com.newEducation.br.service.AnswerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
@@ -15,7 +16,8 @@ import java.util.List;
 @Service
 public class AnswerServiceImpl implements AnswerService {
 
-    private GenericDAO dao;
+    @Autowired
+    private AnswerDAO dao;
 
     @Override
     public void saveAnswer(Answer answer) {
@@ -36,7 +38,7 @@ public class AnswerServiceImpl implements AnswerService {
 
     @Override
     public Answer findAnswerById(Long id) {
-        Answer answer = dao.getById(Answer.class, id);
+        Answer answer = dao.getById(id);
         return answer;
     }
 

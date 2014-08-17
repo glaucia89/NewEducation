@@ -1,9 +1,10 @@
 package com.newEducation.br.service.impl;
 
-import com.newEducation.br.dao.GenericDAO;
+import com.newEducation.br.dao.GameDAO;
 import com.newEducation.br.model.Game;
 import com.newEducation.br.model.User;
 import com.newEducation.br.service.GameService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -15,7 +16,8 @@ import java.util.List;
 @Service
 public class GameServiceImpl implements GameService {
 
-    private GenericDAO dao;
+    @Autowired
+    private GameDAO dao;
 
     @Override
     public void saveGame(Game game) {
@@ -38,7 +40,7 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public List<Game> findAllGames() {
-        return dao.findAll(Game.class);
+        return dao.findAll();
     }
 
     @Override

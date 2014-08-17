@@ -28,7 +28,7 @@
 
 <jsp:include page="templates/layout/header.jsp"/>
 
-<jsp:include page="templates/School/list.jsp"/>
+<jsp:include page="templates/school/list.jsp"/>
 
 <jsp:include page="templates/layout/footer.jsp"/>
 

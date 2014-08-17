@@ -1,8 +1,9 @@
 package com.newEducation.br.service.impl;
 
-import com.newEducation.br.dao.GenericDAO;
+import com.newEducation.br.dao.PlayerSchoolGradeDAO;
 import com.newEducation.br.model.PlayerSchoolGrade;
 import com.newEducation.br.service.PlayerSchoolGradeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +14,8 @@ import java.util.List;
 @Service
 public class PlayerSchoolGradeServiceImpl implements PlayerSchoolGradeService {
 
-    private GenericDAO dao;
+    @Autowired
+    private PlayerSchoolGradeDAO dao;
 
     @Override
     public void savePlayerSchoolGrade(PlayerSchoolGrade playerSchoolGrade) {
@@ -34,7 +36,7 @@ public class PlayerSchoolGradeServiceImpl implements PlayerSchoolGradeService {
 
     @Override
     public List<PlayerSchoolGrade> findAllPSG() {
-        return dao.findAll(PlayerSchoolGrade.class);
+        return dao.findAll();
 
     }
 

@@ -24,9 +24,9 @@ public class SchoolController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView list() {
-        ModelAndView modelAndView = new ModelAndView("/school/homeschool");
-        modelAndView.addObject("titulo", "Escolas");
-        //modelAndView.addObject("schools", this.schoolService.findAll());
+        ModelAndView modelAndView = new ModelAndView("homeschool");
+        modelAndView.addObject("title", "Escolas");
+        modelAndView.addObject("schools", this.schoolService.findAll());
         return modelAndView;
     }
 
@@ -34,7 +34,7 @@ public class SchoolController {
     public ModelAndView initAddSchool() {
         ModelAndView modelAndView = new ModelAndView("formSchool");
         School school = new School();
-        modelAndView.addObject("titulo", "Adicionar Escola");
+        modelAndView.addObject("title", "Adicionar Escola");
         modelAndView.addObject("school", school);
         modelAndView.addObject("cities", City.values());
         modelAndView.addObject("states", State.values());
@@ -44,36 +44,39 @@ public class SchoolController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("schoolmodel") School schoolmodel) {
         ModelAndView modelAndView = new ModelAndView("homeschool");
-        modelAndView.addObject("titulo", "Escolas");
-        //this.schoolService.saveSchool(schoolmodel);
+        modelAndView.addObject("title", "Escolas");
+        this.schoolService.saveSchool(schoolmodel);
+        modelAndView.addObject("schools", this.schoolService.findAll());
         modelAndView.addObject("message", "Escola " + schoolmodel.getTitle() + " foi salva com sucesso");
         return modelAndView;
     }
 
     @RequestMapping(value = "/edit{id}", method = RequestMethod.GET)
     public ModelAndView initEditSchool(@PathVariable Long id) {
-        //School school = this.schoolService.findSchoolById(id);
+        School school = this.schoolService.findSchoolById(id);
         ModelAndView modelAndView = new ModelAndView("formSchool");
-        modelAndView.addObject("titulo", "Editar Escola");
-        //modelAndView.addObject("school", school);
+        modelAndView.addObject("title", "Editar Escola");
+        modelAndView.addObject("school", school);
         return modelAndView;
     }
 
     @RequestMapping(value = "/edit{id}", method = RequestMethod.POST)
     public ModelAndView update(@ModelAttribute School school, @PathVariable Long id) {
         ModelAndView modelAndView = new ModelAndView("homeschool");
-        modelAndView.addObject("titulo", "Escolas");
-        //this.schoolService.updateSchool(school);
+        modelAndView.addObject("title", "Escolas");
+        this.schoolService.updateSchool(school);
+        modelAndView.addObject("schools", this.schoolService.findAll());
         modelAndView.addObject("messagee", "Escola " + school.getTitle() + " editado com sucesso!");
         return modelAndView;
     }
 
     @RequestMapping(value = "/delete{id}", method = RequestMethod.GET)
     public ModelAndView delete(@PathVariable Long id) {
-        //this.schoolService.deleteSchoolbyId(id);
+        this.schoolService.deleteSchoolbyId(id);
         ModelAndView modelAndView = new ModelAndView("homeschool");
-        modelAndView.addObject("titulo", "Escolas");
+        modelAndView.addObject("title", "Escolas");
         modelAndView.addObject("message", "Escola deletada com sucesso!");
+        modelAndView.addObject("schools", this.schoolService.findAll());
         return modelAndView;
     }
 }
